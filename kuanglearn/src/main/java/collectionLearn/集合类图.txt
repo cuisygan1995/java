@@ -1,0 +1,24 @@
+
+集合重要的类关系
+
+单例集合
+         |------Iterable-----|
+         |         |         |
+         |    Collection     |
+         |  |        |       |
+         |  Set      List    |
+         |  |          |     |
+         TreeSet      ArrayList
+         HashSet      Vector
+                      LinkedList
+
+双例集合
+
+                  |-------------Map---------------|
+                     |          |         |       |
+                 Hashtable    TreeMap    HashMao  |
+                     |                     |      |
+                 Properties            LinkedHashMap
+
+
+
