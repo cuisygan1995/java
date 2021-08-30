@@ -1,0 +1,4 @@
+
+
+1、继承的collection，collection的方法，set也能用
+2、无索引

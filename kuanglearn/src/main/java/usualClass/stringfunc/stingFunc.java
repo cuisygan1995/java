@@ -26,7 +26,7 @@ public class stingFunc {
         System.out.println(string.indexOf("am"));
         System.out.println(string.indexOf("am", 4));
         System.out.println(string.lastIndexOf("am"));
-        //trim
+        //trim去空格
         System.out.println("-----------trim-----------");
         System.out.println(string.trim());
         //toUpperCase,toLowerCase

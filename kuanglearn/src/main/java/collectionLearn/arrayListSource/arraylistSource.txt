@@ -1,0 +1,33 @@
+
+
+arraylist底层结构和源码分析，线程不安全
+
+1'扩容机制
+
+arraylist中维护了一个object类型的数组elementData。transient Object[] elementData. //transient 表示瞬间的，短暂的，表示该属性不会被序列化
+
+当创建arraylist对象时候，如果是无参构造器，则初始elementData容量为0，第1次添加，则扩容elementData为10，如需要再次扩容，则扩容elementData为1.5倍
+
+如果使用指定大小构造器，则初始elementData容量为指定大小，如果需要扩容，则直接扩容elementData为1.5倍
+
+
+
+vertor底层结构，线程安全
+
+扩容机制
+也是维护了elementData，使用无参构造器时，也是初始化了10个，最为不够用时候，按照2倍来扩容
+
+
+
+linkedlist 线程不安全
+
+1、底层实现双向链表和双端队列
+2、linkedlist维护了first和last分别指向首节点和尾节点
+3、每个节点（node对象），里面维护了prev，next，item三个属性
+4、linked的添加和删除，不通过数组，只需要改变两个指向，删除+新增元素效率较高
+
+
+使用比较
+1、增删较多时，用linkedlist
+2、改查较多时，用arraylist
+3、线程安全用vector
