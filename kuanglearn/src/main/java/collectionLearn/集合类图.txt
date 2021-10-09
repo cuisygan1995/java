@@ -16,7 +16,7 @@
 
                   |-------------Map---------------|
                      |          |         |       |
-                 Hashtable    TreeMap    HashMao  |
+                 Hashtable    TreeMap    HashMap  |
                      |                     |      |
                  Properties            LinkedHashMap
 

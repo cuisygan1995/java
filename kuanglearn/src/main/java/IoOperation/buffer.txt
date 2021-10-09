@@ -1,0 +1,19 @@
+
+1、节点流
+
+           字节输入流              字节输出流               字符输入流             字符输出流
+访问文件    FileInputStream       FileOutputStream        FileReader            FileWriter
+访问数组    ByteArrayInputStream  ByteArrayOutputStream   CharArrayReader       CharArrayWriter
+访问管道    PipeInputStream       PipeOutputStream        PipedReader           PipedWriter
+访问字符串                                                StringReader          StringWriter
+...
+
+2、处理流（包装流）对节点流进行包装，功能更加强大，FileInputStream,FileOutStream等(装饰者模式)
+
+
+-------------Reader-------------
+｜                      |                        |
+InputStreamReader    CharArrayReader        BufferedReader
+|                                           (可以封装任意一个节点流，该节点流只需要时Reader的子类)
+|
+FileReader
